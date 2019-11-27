@@ -17,6 +17,7 @@ while True:
     liczba_zgadywana = int(input('Zgadnij liczbe z zakresu od 0 - 999 : '))
     if liczba_zgadywana == liczba:
         print('Zgadłes')
+        i = 1
         break
     elif liczba_zgadywana > liczba:
         print('Liczba jest mniejsza')
