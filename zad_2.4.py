@@ -8,8 +8,7 @@ i pełni w informatyce bardzo ważną rolę. Umiejętnie ją stosując powinno s
 """
 from random import randint
 liczba = randint(0, 999)
-i = 0
-j = 0
+i = 1
 #print(liczba)
 #liczba_zgadywana = int(input('Zgadnij liczbe z zakresu od 0 - 999 : '))
 
@@ -17,7 +16,6 @@ while True:
     liczba_zgadywana = int(input('Zgadnij liczbe z zakresu od 0 - 999 : '))
     if liczba_zgadywana == liczba:
         print('Zgadłes')
-        i = 1
         break
     elif liczba_zgadywana > liczba:
         print('Liczba jest mniejsza')
@@ -25,8 +23,8 @@ while True:
         continue
     elif liczba_zgadywana < liczba:
         print('Liczba jest większa')
-        j+=1
+        i+=1
         continue
 
 
-print(f'Odgadłeś za {i + j } razem')
+print(f'Odgadłeś za {i} razem')
