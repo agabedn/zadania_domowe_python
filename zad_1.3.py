@@ -29,5 +29,6 @@ elif(bmi >=25 and bmi <30):
     print('Masz lekką nadwagę, to jeszcze nie tragedia, nie jedz batoników przed snem!!')
 elif(bmi >=30 and bmi <35):
     print('Uwaga!!, twoja waga jest odrobinę za duża pora na cwiczenia, mogą być brzuszki i pajacyki')
-elif bmi >=35:
+else:
+    #bmi >=35:
     print('Skorzystaj z porad dietetyka!')
