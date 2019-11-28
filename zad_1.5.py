@@ -29,9 +29,9 @@ print(f'Podaleś takie liczby: a = {a} b = {b} c = {c}')
 
 if a + b > c and a + c > b and b + c > a:
     print('Z podanych liczb można obliczyć pole trójkąta')
-    polowa_obwodu= (a+b+c) / 2
+    #polowa_obwodu= (a+b+c) / 2
     #print(polowa_obwodu)
-    pole = (polowa_obwodu*((polowa_obwodu-a)*(polowa_obwodu-b)*(polowa_obwodu-c)))
+    pole = (((a + b + c) / 2) * ((((a + b + c) / 2) - a) * (((a + b + c) / 2) - b) * (((a + b + c) / 2) - c)))
     #print(pole)
     pole_trojkata = math.sqrt(pole)
     print(f'Pole trójkąta wynosi: {pole_trojkata}')
