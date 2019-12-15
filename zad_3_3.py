@@ -38,15 +38,13 @@ wynik = suma(lista_liczb)
 def suma(liczby : list) -> int:
     suma_liczb = 0
     for element in liczby:
-        suma_liczb = suma_liczb + element
+        suma_liczb += element
 
     return suma_liczb
 
 def srednia(liczby: list) -> float:
-    suma_liczb = 0
-    for element in liczby:
-        suma_liczb = suma_liczb + element
-        srednia = suma_liczb/len(liczby)
+
+    srednia = suma(liczby)/len(liczby)
     return srednia
 
 def max(liczby: list) -> int:
@@ -59,8 +57,8 @@ def max(liczby: list) -> int:
 
 def roznica_min_max(liczby: list) -> float:
     if liczby == []:
-        print('0')
-        exit()
+        #print('0')
+        return None
     element_max = None
     element_min = None
     for element, wartosc in enumerate(liczby):
