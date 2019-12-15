@@ -32,7 +32,7 @@ def miesiace_roku(miesiac_podany: str) -> int:
     }
     if miesiac_podany not in miesiace:
         print(f'Nie ma takiego miesiąca')
-        exit()
+        return None
     if miesiac_podany == 'luty':
         rok = int(input('Podaj rok:'))
         if rok % 4 == 0 and  rok % 100 != 0:
