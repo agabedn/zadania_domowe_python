@@ -42,7 +42,7 @@ def max(liczba: int, liczba2: int)-> int:
 def srednia(lista: list)->float:
     suma_liczb = 0
     for element in lista:
-        suma_liczb = suma_liczb + element
+        suma_liczb += element
         srednia = suma_liczb / len(lista)
 
     return round(srednia,2)
@@ -50,8 +50,8 @@ def srednia(lista: list)->float:
 
 def pole_kola(promien: int) -> float:
 
-    pi = 3.1415
-    pole = pi*(promien**2)
+
+    pole = math.pi*(promien**2)
     pole = round(pole,3)
     return pole
 
